@@ -1,0 +1,387 @@
+/* 
+const backgroundColor = '#191724';
+const foregroundColor = '#E1E1E6';
+const borderColor = '#302C47';
+const cursorColor = '#f8f8f2';
+const colors = {
+  black: '#000000',
+  red: '#ff5555',
+  green: '#9ccfd8',
+  yellow: '#31748f',
+  blue: '#bd93f9',
+  magenta: '#ff79c6',
+  cyan: '#c4a7e7',
+  white: '#bfbfbf',
+  lightBlack: '#4d4d4d',
+  lightRed: '#ff6e67',
+  lightGreen: '#9ccfd8',
+  lightYellow: '#31748f',
+  lightBlue: '#caa9fa',
+  lightMagenta: '#ff92d0',
+  lightCyan: '#c4a7e7',
+  lightWhite: '#e6e6e6',
+};
+
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgba(43,39,64) !important;
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: 'nuixyber', sans-serif;
+  margin: 0; 
+  padding: 0;
+  cursor: url("../img/cursor.cur"), auto;
+}
+
+
+
+.null {
+  position:fixed;
+  bottom: 0;
+  left: -300px;
+  border: 0px solid white;
+  width: 350px;
+  z-index: 100;
+}
+
+
+
+.wrapper.two {
+  position: fixed;
+  top: 300px;
+  left: -470px;
+
+  width: 600px;
+  border: 0px solid magenta;
+  border-radius: 50px;
+  background-color: none;
+  font-size: 3rem;
+  font-family: 'nuixyber', sans-serif;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.neon h3 {
+    margin: auto;
+    animation: neon 1s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: pink;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: magenta;
+    }
+}
+
+
+
+
+a:hover {
+  cursor: url("../img/glitch.cur"), auto;
+}
+
+p.menu {
+  color: #9ccfd8;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: '8BIT WONDER', sans-serif;
+  border: 1px solid white;
+}
+
+p.caption {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+
+@keyframes mymove {
+  from {border-color: orange;}
+  to {border-color: purple}
+}
+
+
+.log {
+  background-image: url("../img/icon.png");
+  background-size: contain;
+  width: 180px;
+  height: 180px;
+  
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 40px;
+
+  border: 1px solid orange;
+  animation: mymove 1s infinite;
+  animation-direction: alternate;
+}
+
+.log:hover {
+  background-image: none;
+}
+
+
+.insidius{
+  position: fixed;
+  left: 10px;
+  top: 40px;
+  opacity: 1;
+  width: 180px;
+  height: 180px;
+  z-index: 100;
+  border: 0px solid white;
+  border-radius: 40px;
+  font-size: 25px;
+  color: transparent;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .5s;
+}
+
+
+.insidius:hover {
+  opacity: 1;
+  ont-size: 25px;
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
+  
+  
+}
+
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  width: 160px;
+  padding: 1.5px;
+  animation-name: color_change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-image: url("./img/icon.png");
+}
+
+.logo:hover {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  width: 160px;
+  padding: 1.5px;
+  background-image: none;
+  animation-name: color_change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+.nyan {
+  position:fixed;
+  bottom: 20px;
+  left: -180px;
+  border: 0px solid white;
+  width: 350px;
+}
+
+.robot {
+  position: fixed;
+  left: 200px;
+  border: 0px solid white;
+  width: 100px;
+}
+
+
+.cyber {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 0px solid white;
+  width: 400px;
+}
+.win {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 0px solid white;
+  width: 200px;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(25,23,36);
+  background: url('../img/side.gif');
+  opacity: 0.98;
+  overflow-x: hidden;
+  text-align: center;
+  
+  box-shadow: 2px 2px #161422;
+  font-family: 'nuixyber', sans-serif;
+}
+
+
+
+@keyframes sidenav-color {
+  from { background-color: cyan; }
+  to { background-color: #d83ad2; }
+}
+
+.sidenav-outside {
+  height: 100%;
+  width: 205px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  text-align: center;
+  
+  /* box-shadow: 2px 2px #161422; */
+  font-family: 'nuixyber', sans-serif;
+
+  animation-name: sidenav-color;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+a.focus:visited {
+  background-color: #ff5555;
+  color: black;
+}
+
+/* Side navigation links */
+.sidenav a {
+  border-radius: 30px;
+  border: 1px solid cyan;
+  font-size: 25px;
+  color: salmon;
+  padding: 16px;
+  margin: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Change color on hover */
+.sidenav a:active {
+  background-color: cyan;
+  color: black;
+}
+
+.sidenav a.focus {
+  background-color: orange;
+  color: black;
+}
+
+
+
+
+
+.mods{
+  width: 390px;
+  height: 150px;
+  color: #ffa500;
+  margin: 0;
+  border-radius: 100px;
+
+  font-size: 25px;
+  font-family: '8BIT WONDER', sans-serif;
+  border: 3px solid cyan;
+
+  background-color: darkcyan;
+
+  text-decoration: none;
+
+  margin: 5px;
+  padding-top: 55px;
+
+  
+  text-align: center;
+
+  display: inline-block; /*otherwise the height and width definitions won't work*/
+}
+
+.mods:hover{
+  color: purple;
+  background-color: cyan;
+}
+
+
+/* Style the content */
+.content {
+  color: #ffa500;
+  overflow-y: scroll;
+  background-color: rgba(43,39,64, .95);
+  border-radius: 100px;
+
+  display: inline-block; /*magic*/
+
+  border: 10px solid orange;
+  animation: mymove 3s infinite;
+  animation-direction: alternate;
+  position: absolute; 
+
+  left: 300px; 
+  margin-left: auto; 
+  margin-right: 20%; 
+  margin-top: 8%;
+  width: 65%; /* Need a specific value to work */
+  height: 70%;
+
+  text-align: center;
+
+  overflow-y: scroll;
+
+  ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.content::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+
+.bg {
+  box-sizing: border-box; /*Not necessary in this situation*/
+  display: block; /*Not necessary, but we do want it this way*/
+  width: 100vw;  /*Not necessary, but we do want it this way*/
+  height: 100vh; /*Necessary.  100vh = 100% of the viewport height*/
+  padding: 0; /* No padding */
+  margin: 0; /* No margins */
+  background: url('../img/bg-anim.gif') no-repeat center center;  
+  /* Shorthand: image, repeat, X align, Y align. */
+  background-size: cover; /* Cover all available space*/
+  opacity: 1;
+}
+
